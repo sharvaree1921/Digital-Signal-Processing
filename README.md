@@ -60,13 +60,33 @@ However,it's not possible to develop whole signal processing theory,only by usin
 2. **Infinite Length**
 -Sequence Notation-x[n],n belongs to Z.
 -Abstraction,good for theorems.
-
 3. **Periodic**-
 N-periodic sequence- x[n]=x[n+kN], n,k,N belongs to Z.
 Same information as finite-length of length N.
 'Natural' bridge between Finite and Infinite lengths.
-
 4. **Finite support**
+x[n]=x[n] if 0<=n<=N,x[n]=0 otherwise.
+Same information as finite length of length N.
+Another bridge between finite and infinite lengths.
 
+We also have definition of **energy**.It is sum of all elements in the sequence of the square magnitudes of elements.Many sequences have infinite amount of energy,like unit step function.f you do the sum, you will see that E to the x goes to infinity. So to describe the energetic properties of the sequences, we use the concept of power. The power is the rate of production of energy for a sequence, and it is defined as the limit for capital N that goes to infinity of the local energy computed over a window of size 2N + 1 divided by the size of the window. 
 
+### How your PC plays discrete time sounds?
+Do check it out [here](https://www.coursera.org/learn/dsp1/lecture/ORbNE/1-1-3-a-how-your-pc-plays-discrete-time-sounds)
 
+## The Karplus-Strong Algorithm-
+First we will deal with some building blocks which are necessary to build any complex circuit in Digital Electronics.Some of them are as follows-
+1-**Adder**-x[n]+y[n]
+2-**Multiplier**-x[n] * p=px[n]
+3-**Unit Delay**-x[n]->x[n-1]
+4-**Arbitrary Delay**-x[n]->x[n-N]
+
+**The two point moving Average**-
+Simple average:m=(a+b)/2
+Moving Average:Take a local Average:y[n]=(x[n]+x[n-1])/2
+
+A must watch video-[Watch Now](https://www.coursera.org/learn/dsp1/lecture/NpNjI/1-1-3-b-the-karplus-strong-algorithm)
+
+## Complex Exponentials-
+To clear basics of Complex numbers waych [here](https://www.coursera.org/learn/dsp1/lecture/Z437t/1-1-4-complex-exponentials)
+Especially watch the last part-must [watch](https://www.coursera.org/learn/dsp1/lecture/Z437t/1-1-4-complex-exponentials)
